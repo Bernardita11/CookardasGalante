@@ -6,11 +6,7 @@ import ItemListContainer from './containers/ItemListContainer';
 function App() {
   return (
     <>
-    <div className="App">
-    </div>
-    <React.Fragment>
-      <NavBar/>
-    </React.Fragment>
+    <NavBar/>
     <ItemListContainer greeting={"¡Bienvenido a nuestra App!"}/>
     </>
   );
