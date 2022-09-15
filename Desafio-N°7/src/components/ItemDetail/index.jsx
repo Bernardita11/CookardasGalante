@@ -14,8 +14,19 @@ const ItemDetail = ({product}) => {
             <p>{product.description}</p>
             </div>
             <ItemCount/>
-        </div>
+    </div>
     )
 }
 
 export default ItemDetail;
+
+
+        {/*<div className='detail-container'>
+            <img className='detail_img' src={product.image} alt="product-detail"/>
+            <div className='detail-subcontainer'>
+                <h1>{product.title}</h1>
+                <p>${product.price}</p>
+                <p>{product.description}</p>
+                <ItemCount/>
+            </div>
+    </div>*/}

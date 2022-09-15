@@ -1,0 +1,45 @@
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(149, 182, 241);
+    gap: 30px;
+    padding: 15px;
+    width: 400px;
+    height: 500px;
+    box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.79);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.card-title{
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.04rem;
+    font-family: "Roboto";
+}
+
+.card-img{
+    max-height: 350px;
+}
+
+.card-container:hover{
+    transform: scale(1.06);
+    transition: 0.3s ease;
+}
+
+
+
+/*.film{
+    display: block;
+    width: 300px;
+    background-color: rgb(163, 164, 248);
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+}
+
+.film img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}*/
