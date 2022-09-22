@@ -9,9 +9,11 @@ import {
   Route,
 } from "react-router-dom";
 import NotFound from './components/NotFound';
+import ShopProvider from './context/ShopProvider';
 
 function App() {
   return (
+    <ShopProvider>
     <BrowserRouter>
     <NavBar/>
     <Routes>
@@ -22,6 +24,7 @@ function App() {
       <Route path="*" element={<NotFound/>}/>
     </Routes>
     </BrowserRouter>
+    </ShopProvider>
   );
 }
 
