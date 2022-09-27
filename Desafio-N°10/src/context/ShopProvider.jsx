@@ -30,12 +30,19 @@ const ShopProvider = ({children}) => {
         }
     }
 
+    const totalPrice = () => {
+        return cart.reduce((prev, act) => prev + act.quantity * act.price, 0);
+    }
+
+    const totalProducts = () => cart.reduce((acumulador, productoActual) => acumulador + productoActual.quantity, 0);
+
     const isInCart = (id) => {
         return cart.some(product => product.id === id)
     }
 
-    const removeItem = (id) => {
-        setCart(cart.filter(product => product.id !== id));
+    const removeItem = (itemToRemove) => {
+        const filteredProducts = cart.filter(item => item !== itemToRemove);
+        setCart(filteredProducts)
     }
 
     const clearCart = () => {

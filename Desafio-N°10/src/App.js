@@ -10,12 +10,33 @@ import {
 } from "react-router-dom";
 import NotFound from './components/NotFound';
 import ShopProvider from './context/ShopProvider';
+//import ReturnTemprano from './components/ReturnTemprano';
+//import BinaryOperator from './components/BinaryOperator';
+//import InLineTernary from './components/InLineTernary';
+//import InLineStyles from './components/InLineStyles';
+//import ClassBasedConditions from './components/ClassBasedConditions';
+//import SpreadProperties from './components/SpreadProperties';
+
+
+//SpreadProperties
+{/*const stylesComponent = {
+  fontSize: '22px',
+  color: 'red'
+} */}
 
 function App() {
+
   return (
     <ShopProvider>
     <BrowserRouter>
     <NavBar/>
+    {/* <ReturnTemprano condition={30}/> */}
+    {/* <BinaryOperator condition={false}/> */}
+    {/* <InLineTernary condition={"Hola"}/> */}
+    {/* <InLineStyles condition={false}/> */}
+    {/* <ClassBasedConditions condition={true} otherClass={"other-class"}/> */}
+    {/* <SpreadProperties additionalStyles={stylesComponent}/> */}
+
     <Routes>
       <Route path="/" element={<ItemListContainer/>}/>
       <Route path="/category/:categoryId" element={<ItemListContainer/>}/>
@@ -27,5 +48,6 @@ function App() {
     </ShopProvider>
   );
 }
+
 
 export default App;
