@@ -30,17 +30,21 @@ const ItemDetailContainer = () => {
                 console.log("No such document!");
                 } 
 
-                //const response = await fetch(`https://fakestoreapi.com/products/${productId}`)
-                //const data = await response.json();
+            const response = await fetch(`https://fakestoreapi.com/products/${productId}`);
+            const data = await response.json();
+            setProductDetail(data);
+
             } catch (error){
                 console.log(error);
             }
         }
         getProducts();
+
     }, [productId])
 
-    return(
-        <ItemDetail product={productDetail}/>
-    )
-}
+    console.log(productDetail);
+
+    return <ItemDetail product={productDetail}/>
+};
+
 export default ItemDetailContainer;
