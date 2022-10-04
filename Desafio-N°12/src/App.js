@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import NotFound from './components/NotFound';
 import ShopProvider from './context/ShopProvider';
+//import algoritmoGuardadoAutomático from './services/guardarOrden';
 //import ReturnTemprano from './components/ReturnTemprano';
 //import BinaryOperator from './components/BinaryOperator';
 //import InLineTernary from './components/InLineTernary';
@@ -25,6 +26,11 @@ import ShopProvider from './context/ShopProvider';
 } */}
 
 function App() {
+
+  /*useEffect(() =>{
+    console.log("Se debería ejecutar una sola vez")
+    algoritmoGuardadoAutomático()
+  }, [])*/
 
   return (
     <ShopProvider>

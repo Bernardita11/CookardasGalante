@@ -30,11 +30,11 @@ const ShopProvider = ({children}) => {
         }
     }
 
-    const totalPrice = () => {
+    {/*const totalPrice = () => {
         return cart.reduce((prev, act) => prev + act.quantity * act.price, 0);
     }
 
-    const totalProducts = () => cart.reduce((acumulador, productoActual) => acumulador + productoActual.quantity, 0);
+    const totalProducts = () => cart.reduce((acumulador, productoActual) => acumulador + productoActual.quantity, 0); */}
 
     const isInCart = (id) => {
         return cart.some(product => product.id === id)
@@ -49,9 +49,14 @@ const ShopProvider = ({children}) => {
         setCart([]);
     }
 
+    const total = () => {
+        const total = cart.reduce((acc, producto) => acc += producto.quantity * producto.price, 0)
+        return total;
+    }
+
     return(
         //la primera llave es de javascript y la segunda es de un objeto 
-        <Shop.Provider value={{cart, addItem, isInCart, removeItem, clearCart}}>
+        <Shop.Provider value={{cart, addItem, isInCart, removeItem, clearCart, total}}>
             {children}
         </Shop.Provider>
     )
