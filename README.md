@@ -15,20 +15,10 @@ USER STORY/BRIEF
 · Al clickear ‘realizar compra’ debe guardarse en la base de datos una orden que tenga todos los productos, la fecha y dar feedback del número de orden.
 
 
-REQUISITOS
+LIBRERIAS
 ==========
-- Debe ser un e-commerce que se conecte con la base de datos de Firebase
-
-- Debe contener los siguientes componentes:
-1.	Navbar
-2.	Catálogo
-3.	Detalle de producto (con funcionalidad para interactuar con el carrito)
-4.	CartContext
-5.	CartWidget
-6.	Carrito
-7.  Formulario de Compra (y su detalle)
-
-- Debe ser un app que utilice React-Router para su navegación
+- Firebase
+- React-router-dom
 
 EXTRAS
 ======
