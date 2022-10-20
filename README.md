@@ -27,3 +27,8 @@ Este sitio esta estilizado con Styled-Components, una libreria que utiliza estil
 DIRECCION WEB DE LA APP
 ========================
 Puedes correr la aplicación yendo al siguiente enlace: https://cookardasgalante.netlify.app/
+
+GIF DE LA APP
+========================
+<p><img align="right" alt="gif" src="https://github.com/Bernardita11/CookardasGalante---Bernardita-Arauco/blob/master/Screen-recording-2022-10-19-21.33.21.gif" width="800" height="600" /></p>
+
